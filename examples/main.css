@@ -27,6 +27,19 @@ body /*BG1*/
 	
 	
 }
+
+
+#text
+{
+font-size: 40px;
+position: fixed;
+top: 500px;
+left: 35%;
+text-align: center;
+z-index: 1;	
+color: white;
+	
+}
 #clouds
 {
 	height: 100%;
