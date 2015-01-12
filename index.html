@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>skrollr - parallax scrolling for the masses</title>
+
+	<link href="examples/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="examples/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	
+    <!-- CODE GOES HERE -->
+    
+    <div id="helper"></div>
+    
+    <div id="clouds">
+    <div id="bg2" data-400="background-position: 0px 0px;bottom[cubic]:1000%;" data-end="background-position: 0px -1000px;bottom:0%;"></div>
+    
+    <div id="bg3" data-1000="background-position: 0px 0px;bottom[quadratic]:150%;" data-end="background-position: 0px -3000px;bottom:0%;"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+	
+
+	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+
+	<script type="text/javascript" src="dist/skrollr.min.js"></script>
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+				
+			}
+		}
+	});
+	</script>
+</body>
+
+</html>
